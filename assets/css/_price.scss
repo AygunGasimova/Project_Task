@@ -1,0 +1,26 @@
+@import "style.css";
+
+main {
+  .price_main {
+    display: flex;
+    justify-content: center;
+    background-color: #2c226e;
+    align-items: center;
+    padding: 150px 0;
+    .price_container {
+      text-align: center;
+      color: #fff;
+      h1 {
+        margin-bottom: 10px;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 1.2;
+      }
+      p {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1.667;
+      }
+    }
+  }
+}

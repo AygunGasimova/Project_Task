@@ -1,0 +1,108 @@
+main {
+  // Start Blog
+  .contact_main {
+    display: flex;
+    justify-content: center;
+    background-color: #2c226e;
+    align-items: center;
+    padding: 150px 0;
+    .contact_container {
+      text-align: center;
+      color: #fff;
+      h1 {
+        margin-bottom: 10px;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 1.2;
+      }
+      p {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1.667;
+      }
+    }
+  }
+  //   End Blog
+  //   Start Map
+  .map {
+    .container {
+      @include container;
+      .map-responsive {
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+        height: 0;
+      }
+
+      .map-responsive iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+      }
+    }
+  }
+  //   End Map
+  // Start Contact
+  .contact_us {
+    .container {
+      width: 1140px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 150px;
+      flex-wrap: wrap;
+      .contact_about {
+        display: flex;
+        flex-direction: column;
+
+        .contact_item {
+          display: flex;
+          color: #3a414e;
+          i {
+            font-size: 20px;
+            margin: 0 20px 30px 0;
+          }
+          .contact_content {
+            font-size: 16px;
+            a {
+              color: #3a414e;
+            }
+            p {
+              color: #999;
+            }
+          }
+        }
+      }
+      .form_contact {
+        display: flex;
+        flex-direction: column;
+        width: 330px;
+        #name,
+        #subject,
+        #email {
+          padding: 15px 0 15px 10px;
+          background: rgba(130, 139, 178, 0.1);
+          border: 0;
+          margin-bottom: 20px;
+        }
+      }
+      .form2 {
+        #message {
+          background-color: rgba(130, 139, 178, 0.1);
+        }
+      }
+      .send_msg {
+        position: relative;
+        display: flex;
+        .message{
+            @include signUp;
+            position: absolute;
+            bottom: -50px;
+            right: 30px;
+        }
+      }
+    }
+  }
+}

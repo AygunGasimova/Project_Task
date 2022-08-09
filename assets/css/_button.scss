@@ -1,0 +1,19 @@
+@import "_variables.scss";
+
+@mixin signUp {
+    color: $gray;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: $white; 
+    padding: 15px 40px;
+    border: 1px solid;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.8s;
+    &:hover{
+        color: $white;
+          background-color: $indigo;
+          border: 1px solid;
+          border-radius: 30px;
+    }
+}

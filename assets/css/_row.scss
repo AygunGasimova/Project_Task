@@ -1,0 +1,33 @@
+@mixin row {
+    background-color: $light;
+    padding: 150px;
+    .container {
+      width: 1140px;
+      margin: 0 auto;
+      .row {
+        display: flex;
+        column-gap: 100px;
+  
+        align-items: center;
+        .content {
+          .leading_title {
+            color: $gray-dark;
+            font-size: 36px;
+            line-height: 1.25;
+            font-weight: 700;
+            margin-bottom: 25px;
+          }
+          .description {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 1.667;
+            color: $gray;
+            margin-bottom: 40px;
+          }
+          .know_more {
+            @include signUp;
+          }
+        }
+      }
+    }
+  }
